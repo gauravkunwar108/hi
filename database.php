@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
+$host = "ucetgmffhz";
 $dbname = "clinicdb";
-$username = "root";
-$password = "";
+$username = "ucetgmffhz";
+$password = "VrYW6htk98";
 
 $mysqli = new mysqli(hostname: $host,
                      username: $username,
