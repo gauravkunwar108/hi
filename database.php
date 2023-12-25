@@ -1,7 +1,7 @@
 <?php
 
 $host = "64.227.159.106";
-$dbname = "clinicdb";
+$dbname = "ucetgmffhz";
 $username = "ucetgmffhz";
 $password = "VrYW6htk98";
 
