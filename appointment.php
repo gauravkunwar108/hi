@@ -37,6 +37,7 @@
                 <li><a href="about.php">About</a></li>
                 <li><a href="equipment.php">Equipments</a></li>
                 <li><a href="appointment.php">Appointments</a></li>
+                <li><a href="blogfaq.php">Blog and FAQs</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -69,7 +70,7 @@
                     </li>
                     <li>
                         <i class="uil uil-envelope"></i>
-                        <h5>raptimedical2013@gmail.com</h5>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raptimedical2013@gmail.com" target="_blank"><h5>raptimedical2013@gmail.com</h5></a>
                     </li>
                     <li>
                         <i class="uil uil-location-point"></i>
@@ -88,7 +89,7 @@
                 </ul>
             </aside>
 
-            <form class="contact__form">
+            <form action="appointment-process.php" method="post" class="contact__form">
                 <div class="form__name">
                     <input type="text" name="fName" placeholder="First Name" required>
                     <input type="text" name="lName" placeholder="Last Name" required>
@@ -96,11 +97,11 @@
                 <input type="email" name="email" placeholder="Your Email Address" required>
                 <input type="number" name="phonenum" placeholder="Your Phone Number" required>
                 <select name="doctor">
-                    <option>Dr. Ajay Regmi</option>
-                    <option>Dr. Prabesh Neupane</option>
-                    <option>Dr. Sanjeev Shah</option>
-                    <option>Dr. Binay Bhattarai</option>
-                    <option>Dr. Himkar Gyawali</option>
+                    <option value="Dr. Ajay Regmi">Dr. Ajay Regmi</option>
+                    <option value="Dr. Prabesh Neupane">Dr. Prabesh Neupane</option>
+                    <option value="Dr. Sanjeev Shah">Dr. Sanjeev Shah</option>
+                    <option value="Dr. Binay Bhattarai">Dr. Binay Bhattarai</option>
+                    <option value="Dr. Himkar Gyawali">Dr. Himkar Gyawali</option>
                 </select>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -123,8 +124,9 @@
                 <ul class="permalinks">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="courses.php">Courses</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="equipment.php">Equipments</a></li>
+                    <li><a href="appointment.php">Appointments</a></li>
+                    <li><a href="blogfaq.php">Blog and FAQs</a></li>
                 </ul>
             </div>
 
@@ -140,7 +142,7 @@
                 <div>
                     <p>+977 082-560-790</p>
                     <p>+977 957-860-790</p>
-                    <p>raptimedical2013@gmail.com</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raptimedical2013@gmail.com" target="_blank"><p>raptimedical2013@gmail.com</p></a>
                 </div>
 
                 <ul class="footer__socials">

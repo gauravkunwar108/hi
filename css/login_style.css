@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -52,19 +52,6 @@ body {
     color: gray;
 }
 
-.helper-link {
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-.helper-para {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 1rem;
-}
-
 .login-button {
     margin: 1.5rem 0;
     border: 1px solid #fdc886;
@@ -90,53 +77,7 @@ body {
     font-size: 15px;
 }
 
-.option-signin::before,
-.option-signin::after {
-    content: "";
-    display: block;
-    background-color: black;
-    height: 1px;
-    width: 10%;
-    position: absolute;
-    top: 50%;
-}
 
-.option-signin::before {
-    left: -20%;
-}
-
-.option-signin::after {
-    right: -20%;
-}
-
-.social-sign {
-    border-radius: 0;
-    border: 1px solid gainsboro;
-    color: #000;
-    background-color: transparent;
-    padding: .5rem 1rem;
-    margin: 5px;
-    transition: all .3s ease-in;
-}
-
-.social-sign:hover,
-.social-sign:focus {
-    border-radius: 10px;
-    border: 1px solid #fdc886;
-    color: #fdc886;
-    background-color: transparent;
-    padding: .5rem 1rem;
-    margin: 5px;
-}
-
-.social-sign i {
-    margin-right: 5px;
-}
-
-.helper-link:hover {
-    color: #000;
-    text-decoration: underline;
-}
 
 .input-box {
     position: relative;
@@ -171,33 +112,3 @@ body {
     }
 }
 
-#error-box {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.45);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 1rem;
-    z-index: 100;
-    filter: drop-shadow(10px, 10px, 20px, #000);
-    font-size: 14px;
-    width: 500px;
-
-    display: flex;
-    align-items: center;
-    visibility: hidden;
-}
-.bi-exclamation-circle{
-    margin-right: 10px;
-}
-.bi-check2-circle{
-    margin-right: 10px;
-}
-
-.loginform {
-    z-index: -1;
-}

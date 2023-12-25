@@ -78,7 +78,7 @@
     width: 50%;
 }
 
-input, textarea, select {
+input, textarea, select, option {
     width: 100%;
     padding: 1rem;
     background: var(--color-bg);

@@ -1,3 +1,24 @@
+<?php
+
+$is_invalid = false;
+
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $mysqli = require __DIR__ . "/database.php";
+    $username = mysqli_real_escape_string($mysqli, strtolower($_POST['uname']));
+    $password = mysqli_real_escape_string($mysqli, $_POST['password']);
+
+    if ($username == "admin" && $password == "admin") {
+        session_start();
+        session_regenerate_id();
+        $_SESSION["user_id"] = "admin";
+        header('Location: appointment_details.php');
+    }
+
+    $is_invalid = true;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,49 +29,36 @@
     <title>Document | Login</title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="css/login_style.css">
 </head>
 
 <body>
 
-    <div class="d-flex justify-content-center">
-        <div id="error-box">
-            <i class="bi bi-exclamation-circle"></i> Please Enter Valid Credentials!
-        </div>
-    </div>
 
     <section id="home">
-        <div class="loginform" id="login-form">
-            <h4 class="form-title">Login to the admin panel.</h4>
-            <p class="form-desc">Enter email and password</p>
+        <form method="post">
+            <div class="loginform" id="login-form">
+                <h4 class="form-title">Login to the admin panel.</h4>
+                <p class="form-desc">Enter email and password | <a href="index.php">Go home.</a></p>
+                <p class="form-desc"><?php if ($is_invalid) : ?>
+                        <em>Invalid login</em>
+                    <?php endif; ?>
+                </p>
 
-            <div class="input-box email w-100">
-                <input type="text" placeholder="Enter Email/Phone No." class="form-control-plaintext" id="inputEmail">
+                <div class="input-box email w-100">
+                    <input type="text" placeholder="Enter username" class="form-control-plaintext" name="uname" id="inputEmail">
 
-            </div>
-            <div class="input-box passcode w-100">
-                <input type="password" placeholder="Passcode" class="form-control-plaintext" id="inputPassword">
-                <div id="show-hide">
-                    <i class="bi bi-eye-slash" onclick="showHidePasscode(true, 0)"></i>
                 </div>
+                <div class="input-box passcode w-100">
+                    <input type="password" placeholder="Passcode" name="password" class="form-control-plaintext" id="inputPassword">
+                </div>
+                <button class="btn btn-primary login-button w-100">Log in</button>
             </div>
-
-            <button class="btn btn-primary login-button w-100" onclick="login()">Log in</button>
-
-        </div>
+        </form>
     </section>
 
-    <script src="js/app.js"></script>
 </body>
 
 </html>

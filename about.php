@@ -37,6 +37,7 @@
                 <li><a href="about.php">About</a></li>
                 <li><a href="equipment.php">Equipments</a></li>
                 <li><a href="appointment.php">Appointments</a></li>
+                <li><a href="blogfaq.php">Blog and FAQs</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -55,7 +56,7 @@
             </div>
 
             <div class="about__achievements-right">
-                <h1>About Us.</h1>
+                <h1>About Us</h1>
                 <p>
                     Celebrating 68 Years of Caring for You! Established in 2013 B.S. in Ghorahi, Dang, Rapti Medical and
                     Swasthya Clinic has evolved into a trusted healthcare destination, committed to serving our
@@ -106,30 +107,19 @@
     <section class="team">
         <h2>Meet the Experts</h2>
         <div class="container team__container">
-            <article class="team__member">
+        <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/expert4.jpg">
+                    <img src="./images/expert3.jpg">
                 </div>
                 <div class="team__member-info">
-                    <h4>Dr. Ajay Regmi</h4>
-                    <p>MBBS, MS</p>
-                    <p>Orthopedic Surgery</p>
-                    <p>N.M.C No. 11829</p>
-                    <p>Available everyday: 8am - 5pm</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+                    <h4>Dr. Himkar Gyawali</h4>
+                    <p>MBBS, MD (internal Medicine)</p>
+                    <p>Physician</p>
+                    <p>N.M.C No. 1053</p>
+                    <p>Available everyday: 9-10am and 5-7pm</p>
                 </div>
             </article>
-            <article class="team__member">
+        <article class="team__member">
                 <div class="team__member-image">
                     <img src="./images/expert5.jpg">
                 </div>
@@ -138,40 +128,7 @@
                     <p>MBBS, MD (Cardiology)</p>
                     <p>FAPSC, FAPSIC, Fellowship in Interventional Cardiology (Malaysia)</p>
                     <p>Consultant Intervention Cardiologist</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                </div>
-            </article>
-            <article class="team__member">
-                <div class="team__member-image">
-                    <img src="./images/expert1.jpg">
-                </div>
-                <div class="team__member-info">
-                    <h4>Dr. Sanjeev Shah</h4>
-                    <p>MBBS, MD (TU)</p>
-                    <p>Neuro-Psychiatry</p>
-                    <p>N.M.C No. 10572</p>
-                    <p>Available 3rd weed of every month.</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+                    <p>N.M.C No. 7161</p>
                 </div>
             </article>
             <article class="team__member">
@@ -186,41 +143,34 @@
                     <p>N.M.C No. 9095</p>
                     <p>Available Friday and Saturday of first week of every month.</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="./images/expert1.jpg">
+                </div>
+                <div class="team__member-info">
+                    <h4>Dr. Sanjeev Shah</h4>
+                    <p>MBBS, MD (TU)</p>
+                    <p>Neuro-Psychiatry</p>
+                    <p>N.M.C No. 10572</p>
+                    <p>Available 3rd weed of every month.</p>
                 </div>
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/expert3.jpg">
+                    <img src="./images/expert4.jpg">
                 </div>
                 <div class="team__member-info">
-                    <h4>Dr. Himkar Gyawali</h4>
-                    <p>MBBS, MD (internal Medicine)</p>
-                    <p>Physician</p>
-                    <p>N.M.C No. 1053</p>
-                    <p>Available everyday: 9-10am and 5-7pm</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+                    <h4>Dr. Ajay Regmi</h4>
+                    <p>MBBS, MS</p>
+                    <p>Orthopedic Surgery</p>
+                    <p>N.M.C No. 11829</p>
+                    <p>Available everyday: 8am - 5pm</p>
                 </div>
             </article>
+            
+            
+            
         </div>
         <h2>Meet Our Team</h2>
         <div class="container team__container">
@@ -230,18 +180,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>Youbraj Pandeya</h4>
-                    <p>CEO</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+                    <p>Owner</p>
                 </div>
             </article>
 
@@ -253,17 +192,6 @@
                     <h4>Sandeep Raj Pandeya</h4>
                     <p>Pharmacy Incharge</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                </div>
             </article>
 
             <article class="team__member">
@@ -273,17 +201,6 @@
                 <div class="team__member-info">
                     <h4>Prativa Thapa</h4>
                     <p>Assistant Pharmacist</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
                 </div>
             </article>
 
@@ -295,40 +212,10 @@
                     <h4>Pabitra Gharti Magar</h4>
                     <p>Lab Technician</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                </div>
             </article>
         </div>
     </section>
     <!--================================================ END OF TEAM ================================================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer>
         <div class="container footer__container">
@@ -347,6 +234,7 @@
                     <li><a href="about.php">About</a></li>
                     <li><a href="equipment.php">Equipments</a></li>
                     <li><a href="appointment.php">Appointments</a></li>
+                    <li><a href="blogfaq.php">Blog and FAQs</a></li>
                 </ul>
             </div>
 
@@ -362,7 +250,7 @@
                 <div>
                     <p>+977 082-560-790</p>
                     <p>+977 957-860-790</p>
-                    <p>raptimedical2013@gmail.com</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raptimedical2013@gmail.com" target="_blank"><p>raptimedical2013@gmail.com</p></a>
                 </div>
 
                 <ul class="footer__socials">
